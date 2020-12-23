@@ -57,7 +57,6 @@ app.post('/', (req, res) => {
             throw new Error("La cantidad de atributos enviadas es mayor a la solicitada.");
         }
     } catch (err2) {
-        var error = err2;
         if (codEstado === 201)
             codEstado = 500;
         console.log(err2);
